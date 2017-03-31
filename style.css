@@ -1,42 +1,17 @@
 .clock {
-  border: solid 10px #0a2f5d;
-  border-radius: 50%;
-  width: 600px;
-  height: 600px;
-  position: relative;
-  margin: 50px auto;
-  background: url(images/sailor-coug.jpg) no-repeat;
-  background-size: 520px;
-  background-position: center;
+    border: solid 10px #0a2f5d;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 50px auto;
+    background: url(images/sailor-coug.jpg) no-repeat;
+    background-size: 520px;
+    background-position: center;
 }
 
-/*.hand {
-  width: 45%;
-  height: 5px;
-  background: black;
-  position: absolute;
-  top: 50%;
-  margin-left: 5%;
-  transform-origin: 100%;
-  transition: all 0.05s;
-  transform: rotate(90deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}*/
 
-.second-hand {
-  width: 45%;
-  height: 4px;
-  background: #8f929b;
-  position: absolute;
-  top: 50%;
-  margin-left: 5%;
-  transform-origin: 100%;
-  transition: all 0.05s;
-  transform: rotate(90deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-
-.minute-hand {
+.hand {
   width: 45%;
   height: 8px;
   background: #8f929b;
@@ -47,17 +22,16 @@
   transition: all 0.05s;
   transform: rotate(90deg);
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.second-hand {
+    height: 4px;
 }
 
 .hour-hand {
-  width: 31%;
-  height: 8px;
-  background: #8f929b;
-  position: absolute;
-  top: 50%;
-  margin-left: 19%;
-  transform-origin: 100%;
-  transition: all 0.05s;
-  transform: rotate(90deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    width: 35%;
+    margin-left: 15%;
+}
+
+.noTransition {
+  transition: none;
 }
