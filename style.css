@@ -7,13 +7,52 @@
   margin: 50px auto;
 }
 
-.hand {
+/*.hand {
   width: 45%;
   height: 5px;
   background: black;
   position: absolute;
   top: 50%;
   margin-left: 5%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}*/
+
+.second-hand {
+  width: 45%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  margin-left: 5%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.minute-hand {
+  width: 45%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  margin-left: 5%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width: 35%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  margin-left: 15%;
   transform-origin: 100%;
   transition: all 0.05s;
   transform: rotate(90deg);
