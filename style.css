@@ -1,0 +1,21 @@
+.clock {
+  border: solid 10px black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 50px auto;
+}
+
+.hand {
+  width: 45%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  margin-left: 5%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
