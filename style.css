@@ -1,10 +1,13 @@
 .clock {
-  border: solid 10px black;
+  border: solid 10px #0a2f5d;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   position: relative;
   margin: 50px auto;
+  background: url(images/sailor-coug.jpg) no-repeat;
+  background-size: 520px;
+  background-position: center;
 }
 
 /*.hand {
@@ -22,8 +25,8 @@
 
 .second-hand {
   width: 45%;
-  height: 2px;
-  background: black;
+  height: 4px;
+  background: #8f929b;
   position: absolute;
   top: 50%;
   margin-left: 5%;
@@ -35,8 +38,8 @@
 
 .minute-hand {
   width: 45%;
-  height: 5px;
-  background: black;
+  height: 8px;
+  background: #8f929b;
   position: absolute;
   top: 50%;
   margin-left: 5%;
@@ -47,12 +50,12 @@
 }
 
 .hour-hand {
-  width: 35%;
-  height: 5px;
-  background: black;
+  width: 31%;
+  height: 8px;
+  background: #8f929b;
   position: absolute;
   top: 50%;
-  margin-left: 15%;
+  margin-left: 19%;
   transform-origin: 100%;
   transition: all 0.05s;
   transform: rotate(90deg);
