@@ -1,15 +1,14 @@
 .clock {
     border: solid 10px #0a2f5d;
     border-radius: 50%;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     position: relative;
-    margin: 50px auto;
+    margin: 30px auto;
     background: url(images/sailor-coug.jpg) no-repeat;
-    background-size: 520px;
+    background-size: 430px;
     background-position: center;
 }
-
 
 .hand {
   width: 45%;
@@ -35,3 +34,10 @@
 .noTransition {
   transition: none;
 }
+ #time {
+   color: #0a2f5d;
+   font-size: 100px;
+   font-family: 'Orbitron', sans-serif;
+   text-align: center;
+   text-shadow: #8f929b 2px 2px 2px;
+ }
