@@ -1,7 +1,15 @@
-function setDate() {
-    let date = new Date()
-    let sec = date.getSeconds()
-    console.log(sec);
-}
+window.onload = function() {
 
-setInterval(setDate, 1000)
+    let secondHand = document.querySelector('.second-hand')
+
+    function setDate() {
+        let date = new Date()
+        let second = date.getSeconds()
+        let secondDegree = ((second / 60) * 360) + 90
+        secondHand.style.transform = `rotate(${secondDegree}deg)`
+        console.log(second);
+    }
+
+    setInterval(setDate, 1000)
+
+}
