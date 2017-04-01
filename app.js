@@ -4,15 +4,16 @@ window.onload = function() {
     let minuteHand = document.querySelector('.minute-hand')
     let hourHand = document.querySelector('.hour-hand')
     let allHands = document.querySelectorAll('.hand')
+    let newDate = new Date()
 
     function setDate() {
       let date = new Date()
 
-        let second = date.getSeconds()
+        let second = ('0' + date.getSeconds()).slice(-2)
         let secondDegree = ((second / 60) * 360) + 90
         secondHand.style.transform = `rotate(${secondDegree}deg)`
 
-        let minute = date.getMinutes()
+        let minute = ('0' + date.getMinutes()).slice(-2)
         let minuteDegree = ((minute / 60) * 360) + 90
         minuteHand.style.transform = `rotate(${minuteDegree}deg)`
 
@@ -35,9 +36,7 @@ window.onload = function() {
           adjustedHour = hour
           document.getElementById('time').innerHTML = `${adjustedHour}:${minute} am`
         }
-
     }
 
     setInterval(setDate, 1000)
-
 }
