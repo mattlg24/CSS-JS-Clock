@@ -4,10 +4,9 @@ window.onload = function() {
     let minuteHand = document.querySelector('.minute-hand')
     let hourHand = document.querySelector('.hour-hand')
     let allHands = document.querySelectorAll('.hand')
-    let newDate = new Date()
 
     function setDate() {
-      let date = new Date()
+        let date = new Date()
 
         let second = ('0' + date.getSeconds()).slice(-2)
         let secondDegree = ((second / 60) * 360) + 90
@@ -28,15 +27,19 @@ window.onload = function() {
         }
 
         let adjustedHour
-        if (hour > 12) {
-          adjustedHour = hour - 12
-          document.getElementById('time').innerHTML = `${adjustedHour}:${minute} pm`
+        let suffix = hour >= 12 ? 'pm' : 'am'
 
+        if (hour > 12) {
+            adjustedHour = hour - 12
+            document.getElementById('time').innerHTML = `${adjustedHour}:${minute} ${suffix}`
+        } else if (hour === 00) {
+            adjustedHour = 12
+            document.getElementById('time').innerHTML = `${adjustedHour}:${minute} ${suffix}`
         } else {
-          adjustedHour = hour
-          document.getElementById('time').innerHTML = `${adjustedHour}:${minute} am`
+            adjustedHour = hour
+            document.getElementById('time').innerHTML = `${adjustedHour}:${minute} ${suffix}`
         }
     }
-
+    
     setInterval(setDate, 1000)
 }
